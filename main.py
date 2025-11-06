@@ -14,8 +14,10 @@ api_key=os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
 response=client.models.generate_content(
-    model=""
+    model="gemini-2.5-flash",
+    contents="Provide a brief analysis of the person/profile to the following github profile: DennyDaVjncj",
 )
 
-print("API key:", api_key)
+# print("API key:", api_key)
+print(response.text)
 
