@@ -15,7 +15,7 @@ client = genai.Client(api_key=api_key)
 
 response=client.models.generate_content(
     model="gemini-2.5-flash",
-    contents="Provide a brief analysis of the person/profile to the following github profile: DennyDaVjncj",
+    contents="Provide a brief analysis of the person/profile to the following github profile: github.com/DennyDaVjncj",
 )
 
 # print("API key:", api_key)
