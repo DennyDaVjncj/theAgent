@@ -1,4 +1,5 @@
 # calculator.py
+import calculator
 
 class Calculator:
     def __init__(self):
