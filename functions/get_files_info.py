@@ -3,7 +3,7 @@ import os
 def get_files_info(working_directory,directory=None):
     abs_working_dir=os.path.abspath(working_directory)
     if directory is None:
-        directory= "."
+        directory=working_directory
     abs_working_dir= os.path.abspath(directory)
     if not abs_working_dir.startswith(abs_working_dir):
         return f'Error: "{directory}" is not a working directory.'
