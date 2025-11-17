@@ -1,10 +1,3 @@
-# def main():
-#     print("Welcome to le da Vjncj code")
-
-
-# if __name__ == "__main__":
-#     main()
-
 import os
 from dotenv import load_dotenv
 from google import genai
