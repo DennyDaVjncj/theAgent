@@ -8,7 +8,7 @@ client = genai.Client(api_key=api_key)
 
 response=client.models.generate_content(
     model="gemini-2.5-flash",
-    contents="How do I land a contracted role with KPMG?",
+    contents="Tell me about the interstellar comet: 3I Atlas",
 )
 
 # print("API key:", api_key)
