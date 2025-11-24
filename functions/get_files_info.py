@@ -1,6 +1,6 @@
-import os#study function docd
+import os#study function docs
 
-def get_files_info(working_directory,directory="."):# how do I want the f.s. navigated? I can choose how the agent moves through f.s.
+def get_files_info(working_directory,directory="."):
     abs_working_dir=os.path.abspath(working_directory)
     if directory is ".":
         directory=working_directory
@@ -16,4 +16,6 @@ def get_files_info(working_directory,directory="."):# how do I want the f.s. nav
         size=os.path.getsize(content_path)
         final_response+=f"-{content}: file_size={size}bytes,is_dir={is_dir}/n"
     return final_response 
+
+# how do I want the f.s. navigated? I can choose how the agent moves through f.s.
         
