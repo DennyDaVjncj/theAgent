@@ -1,0 +1,1 @@
+MAX_CHARS=10000#A stant base value. 
