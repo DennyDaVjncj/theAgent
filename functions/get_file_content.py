@@ -8,10 +8,15 @@ def get_file_content(working_directory,file_path):
         return f'Error: Cannot read "{file_path}" as it is outside the permitted working directory'
     if not os.path.isfile(abs_file_path):
         return f'Error:"{file_path}" is not a file.'
-
-f'Error: Cannot read "{file_path}" as it is outside the permitted working directory'
-f'Error: File not found or is not a regular file: "{file_path}"'
-
+    
+    file_content_string=""
+    with open(abs_file_path,"r")as f:
+        file_content_string=f.read(MAX_CHARS)
+        if len(file_content_string)>=MAX_CHARS:
+            file_content_string+=(
+                f'[..File "{file_path}" truncated after {MAX_CHARS} characters.]'
+            )
+    return file_content_string
 
 """ *Err strings with good context, is key for developing effective agents.
 *We ended with developing the agent's ability to visit files and read their contents.
