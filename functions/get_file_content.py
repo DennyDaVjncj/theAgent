@@ -18,7 +18,7 @@ def get_file_content(working_directory,file_path):
                     f'[..File "{file_path}" truncated after {MAX_CHARS} characters.]'
                 )
         return file_content_string
-    except Exception as e:
+    except Exception as e:  
 
 """ *Err strings with good context, is key for developing effective agents.
 *We ended with developing the agent's ability to visit files and read their contents.
