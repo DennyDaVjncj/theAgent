@@ -13,7 +13,7 @@ def main():
     # pkg_contents=get_files_info(working_dir,"../")
     # print(pkg_contents)
     working_dir="calculator"
-    print(get_file_content(working_dir,"lorem.txt"))
+    print(get_file_content(working_dir,"dataset.txt"))
 
     main()
     
