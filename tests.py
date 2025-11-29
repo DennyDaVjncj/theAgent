@@ -12,8 +12,9 @@ def main():
     # print(pkg_contents)
     # pkg_contents=get_files_info(working_dir,"../")
     # print(pkg_contents)
-    working_dir="calculator"
-    print(get_file_content(working_dir,"dataset.txt"))
+    abs_working_dir="calculator"
+    print(get_file_content(get_file_content(abs_working_dir,"dataset.txt")))
+    # return main()
 
     main()
     

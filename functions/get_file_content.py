@@ -19,6 +19,7 @@ def get_file_content(working_directory,file_path):
                 )
         return file_content_string
     except Exception as e:  
+        print(e)
 
 """ *Err strings with good context, is key for developing effective agents.
 *We ended with developing the agent's ability to visit files and read their contents.
