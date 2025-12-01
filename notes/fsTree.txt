@@ -1,0 +1,6 @@
+F.S. FUNCTION(S):
+
+os.path.abspath: Get an absolute path from a relative path
+os.path.join: Join two paths together safely (handles slashes)
+.startswith: Check if a string starts with a specific substring
+os.path.isfile: Check if a path is a file
