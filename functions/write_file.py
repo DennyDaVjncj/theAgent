@@ -8,4 +8,8 @@ def write_file(working_directory, file_path, content):
    if not abs_file_path.startswith(abs_working_dir):
       return f'Error: Cannot write to "{file_path}" as it is not in the working directory'
    if not os.path.isfile(abs_file_path):
-      return f'Error: "{file_path}" is not a file.'
+      parent_dir=os.path.dirname(abs_file_path)
+      try:
+         os.makedirs(parent_dir)
+      except Exception as e:
+         return f'Could not create directories for "{parent_dir}": {e}'
