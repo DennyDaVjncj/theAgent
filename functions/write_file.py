@@ -13,3 +13,7 @@ def write_file(working_directory, file_path, content):
          os.makedirs(parent_dir)
       except Exception as e:
          return f'Could not create directories for "{parent_dir}": {e}'
+   try:
+      with open(abs_file_path, "w") as f:
+         f.write(content)
+      return f'Successfully wrote to "{file_path}".'
