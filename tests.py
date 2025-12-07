@@ -5,7 +5,7 @@
 from functions.write_file import write_file
 
 def main():
-    # working_dir="claculator"
+    working_dir="claculator"
     # root_contents=get_files_info(working_dir)
     # print(root_contents)
     # pkg_contents=get_files_info(working_dir,"pkg")
@@ -19,8 +19,7 @@ def main():
     # print(get_file_content(working_dir,"pkg/calculator.py"))
     # return main()
 
-
-
+    print(write_file(working_dir,"pkg/"))
     main()
     
     
