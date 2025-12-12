@@ -16,8 +16,9 @@ def write_file(working_directory, file_path, content):
    try:
       with open(abs_file_path, "w") as f:
          f.write(content)
-      return f'Successfully wrote to "{file_path}".' 
+      return f'Successfully wrote to "{file_path}" .' 
    
 """
-* 
+* Open(x,'w'), 2nd parameter indicates write mode.
+* Command line, shell, terminal are the links between platforms!
 """
