@@ -21,4 +21,6 @@ def write_file(working_directory, file_path, content):
 """
 * Open(x,'w'), 2nd parameter indicates write mode.
 * Command line, shell, terminal are the links between platforms!
+* Understanding file-system hierarchy is vital agentic development.
+* Be sure to embed system-checks, vulnderability-checks, maintain agent constraints is imperative.
 """
