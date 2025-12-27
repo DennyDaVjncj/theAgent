@@ -1,0 +1,2 @@
+Attempted to create new branch & push to remote unsuccessfully. 
+New flutter directory unable to be tracked properly. 
